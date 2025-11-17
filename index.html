@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>SilencieuxYraldo_CV</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration: none;"><h1 class="NomPrenom">Silencieux <span>Yraldo</span></h1></a>
+        <nav class="navBar">
+            <ul>
+                <li ><a href="#" class="active" >Accueil</a></li>
+                <li><a href="À propos.html" >À propos</a></li>
+                <li><a href="Compétences.html" >Compétences</a></li>
+                <li><a href="Projets.html" >Projets</a></li>
+                <li><a href="Contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <Main>
+        <Section class="Accueil">
+            <div class="txtbtn">
+                <h1 class="MonGt">Je Suis <span>Yraldo</span>, Développeur en devenir <br>passionne par le web et le design!</h1>
+                <button class="VProjets" id="Projet1">Voir mes Projets</button>
+            </div>
+            <div class="img_home">
+                <img src="Images/img-homeil.jpg" alt="" class="img_h" id="monimg">
+            </div>
+        </Section>
+
+        <section class="Apropos1">
+            <h1>À propos</h1>
+            <div class="Apropos">
+                <div class="texInfo">
+                    <p>Je m'appelle <span>Silencieux</span>, passionné par la <br> création de sites modernes et interactifs</p>
+
+                    <p>Je suis actuellement étudiant en <span>développement web</span> ,<br> et je cherche a améliorer mes compétences en Javascripts, HTML et CSS.</p>
+
+                    <p>J'adore transformer mes idées en projets concret <br> et expérimenter avec les nouvelles technologies</p>
+
+                    <button class="tCv" id="OpenCv">Télécharger mon CV</button>
+
+                </div>
+                <div class="Profil">
+                    <img src="Images/Img_Profil.JPG" alt="" class="imgp">                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="Projet">
+            <h1>Projets</h1>
+            <div class="Mprojets">
+                <ul>
+                    <li>
+                        <h4>Un jeux de serpent réaliser avec Javascript qui utilise des évènement DOM</h4>
+                        <p>#Js #Html</p>
+                        <button id="Proje1">Voir</button>
+                    </li>
+
+                    <li>
+                        <h4>Une catalogue de mes artistes préféré qui contient des animations et des effet époustouflant</h4>
+                        <p>#html #css #Js #Jquery</p>
+                        <button>Voir</button>
+                    </li>
+
+                    <li>
+                        <h4>Une application Typing, Azerty permet d'apprendre a taper plus rapide</h4>
+                        <p>#html #css #Js</p>
+                        <button>Voir</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Competence">
+            <h1>Mes Compétences</h1>
+            <div class="Competences">
+                <div class="softkills">
+                    <h5>Soft Kills</h5>
+                    <ul>
+                        <li>
+                            <h4>Gestion de projet</h4>
+                            <div class="Bar_1">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Résolution de problème</h4>
+                            <div class="Bar_1">
+                                <div style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Adaptabilité</h4>
+                            <div class="Bar_1">
+                                <div style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Communication</h4>
+                            <div class="Bar_1">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hardskills">
+                    <h5>Hard Kills</h5>
+                    <ul>
+                        <li>
+                            <h4>HTML</h4>
+                            <div class="Bar_1">
+                                <div style="width: 95%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>CSS</h4>
+                            <div class="Bar_1">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>JAVASCRIPT</h4>
+                            <div class="Bar_1">
+                                <div style="width: 60%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>JQuery</h4>
+                            <div class="Bar_1">
+                                <div style="width: 45%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Vs Code</h4>
+                            <div class="Bar_1">
+                                <div style="width: 55%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="Contact">
+            <h1>Vous avez un <span>projet en tête?</span></h1>
+            <h1>N'hésitez pas me <span>contactez</span></h1>
+
+            <div class="wrap">
+                <form class="card" action="#" method="post" autocomplete="off" id="contactForm">
+
+                    <div class="row row-tight">
+                        <div class="col">
+                            <label for="prenom">Votre prénom</label>
+                            <input id="prenom" name="prenom" type="text" placeholder="John">
+                        </div>
+                        <div class="col">
+                            <label for="nom">Votre nom</label>
+                            <input id="nom" name="nom" type="text" placeholder="Ramoska">
+                        </div>
+                    </div>
+
+                    <div class="row row-tight">
+                        <div class="col" style="flex:1 1 100%;">
+                            <label for="sujet">Votre sujet</label>
+                            <input id="sujet" name="sujet" class="subject" type="text" placeholder="Developpement d'un site vitrine">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="flex:1 1 100%;">
+                            <textarea id="message" name="message" placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button class="btn" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </Main>
+
+    <footer>
+        <div class="text_foot">
+            <h1 class="Design">Designed by <span>Yraldo</span> with html css js</h1>
+            <h1 class="Tous">Tous droits Réservés -2025</h1>
+        </div>
+    </footer>
+
+    <script>
+        let btn_p = document.getElementById("Projet1")
+        btn_p.addEventListener("click",()=>{
+            window.open("Projets/Index.html", "_blank");
+        })
+        let btn_ = document.getElementById("Proje1")
+        btn_.addEventListener("click",()=>{
+            window.open("Projets/Index.html", "_blank");
+        })
+
+        document.getElementById("OpenCv").addEventListener("click", function() {
+            window.location.href = "Projets/CV-Up-S.pdf";
+        });
+
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();  // Evite reload paj la
+
+        // Ranmase done yo
+        let prenom = document.getElementById("prenom").value.trim();
+        let nom = document.getElementById("nom").value.trim();
+        let sujet = document.getElementById("sujet").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        // Kote pou montre mesaj
+        let feedback = document.getElementById("feedback");
+        if (!feedback) {
+            feedback = document.createElement("p");
+            feedback.id = "feedback";
+            feedback.style.marginTop = "10px";
+            feedback.style.fontWeight = "bold";
+            document.getElementById("contactForm").appendChild(feedback);
+        }
+
+        // Validasyon
+        if (prenom === "" || nom === "" || sujet === "" || message === "") {
+            feedback.style.color = "red";
+            feedback.innerText = "Veuillez remplir tous les champs du formulaire.";
+            return;
+        }
+
+        if (prenom.length < 2 || nom.length < 2) {
+            feedback.style.color = "red";
+            feedback.innerText = "Votre prénom et nom doivent contenir au moins 2 caractères.";
+            return;
+        }
+
+        if (message.length < 10) {
+            feedback.style.color = "red";
+            feedback.innerText = "Votre message doit contenir au moins 10 caractères.";
+            return;
+        }
+
+        // Si tout byen pase
+        feedback.style.color = "green";
+        feedback.innerText = "Message envoyé avec succès !";
+
+        // Reset fòm nan si ou vle
+        document.getElementById("contactForm").reset();
+    });
+
+    </script>
+
+
+
+</body>
+</html>

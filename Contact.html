@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Contact_</title>
+</head>
+<body>
+    <header style="
+    background-color:rgb(234, 231, 231); color: #000; position:absolute;">
+        <a href="index.html" style="text-decoration: none;"><h1 class="NomPrenom" style="color: #000;">Silencieux <span>Yraldo</span></h1></a>
+        <nav class="navBar">
+            <ul>
+                <li class="acti"><a href="index.html" style="color: #000;">Accueil</a></li>
+                <li><a href="À propos.html" style="color: #000;">À propos</a></li>
+                <li><a href="Compétences.html" style="color: #000;">Compétences</a></li>
+                <li><a href="Projets.html" style="color: #000;">Projets</a></li>
+                <li><a href="Contact.html" style="color:orange;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Contact" style="height: 100vb;padding: 0px;" >
+            <h1 style="padding-top: 170px;">Vous avez un <span>projet en tête?</span></h1>
+            <h1>N'hésitez pas me <span>contactez</span></h1>
+
+            <div class="wrap" style="margin-top: 0px;">
+                <form class="card" action="#" method="post" autocomplete="off" id="contactForm">
+
+                    <div class="row row-tight">
+                        <div class="col">
+                            <label for="prenom">Votre prénom</label>
+                            <input id="prenom" name="prenom" type="text" placeholder="John">
+                        </div>
+                        <div class="col">
+                            <label for="nom">Votre nom</label>
+                            <input id="nom" name="nom" type="text" placeholder="Ramoska">
+                        </div>
+                    </div>
+
+                    <div class="row row-tight">
+                        <div class="col" style="flex:1 1 100%;">
+                            <label for="sujet">Votre sujet</label>
+                            <input id="sujet" name="sujet" class="subject" type="text" placeholder="Developpement d'un site vitrine">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="flex:1 1 100%;">
+                            <textarea id="message" name="message" placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button class="btn" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text_foot">
+            <h1 class="Design">Designed by <span>Yraldo</span> with html css js</h1>
+            <h1 class="Tous">Tous droits Réservés -2025</h1>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();  // Evite reload paj la
+
+            // Ranmase done yo
+            let prenom = document.getElementById("prenom").value.trim();
+            let nom = document.getElementById("nom").value.trim();
+            let sujet = document.getElementById("sujet").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            // Kote pou montre mesaj
+            let feedback = document.getElementById("feedback");
+            if (!feedback) {
+                feedback = document.createElement("p");
+                feedback.id = "feedback";
+                feedback.style.marginTop = "10px";
+                feedback.style.fontWeight = "bold";
+                document.getElementById("contactForm").appendChild(feedback);
+            }
+
+            // Validasyon
+            if (prenom === "" || nom === "" || sujet === "" || message === "") {
+                feedback.style.color = "red";
+                feedback.innerText = "Veuillez remplir tous les champs du formulaire.";
+                return;
+            }
+
+            if (prenom.length < 2 || nom.length < 2) {
+                feedback.style.color = "red";
+                feedback.innerText = "Votre prénom et nom doivent contenir au moins 2 caractères.";
+                return;
+            }
+
+            if (message.length < 10) {
+                feedback.style.color = "red";
+                feedback.innerText = "Votre message doit contenir au moins 10 caractères.";
+                return;
+            }
+
+            // Si tout byen pase
+            feedback.style.color = "green";
+            feedback.innerText = "Message envoyé avec succès !";
+
+            // Reset fòm nan si ou vle
+            document.getElementById("contactForm").reset();
+        });
+
+    </script>
+    
+</body>
+</html>

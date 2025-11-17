@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0; 
+    font-family: "Montserrat", sans-serif;
+}
+
+body
+{
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/* En tete  */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    padding: 50px 0 50px 0px;
+    width: 100%;
+}
+
+header .NomPrenom
+{
+    font-size:35px;
+    font-family: "Montserrat", sans-serif;
+    color:#fff;
+    padding-left: 50px;
+
+}
+
+.NomPrenom span
+{
+    color: orange;
+}
+
+.navBar a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navBar ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.navBar ul li 
+{
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+}
+.navBar a:active,
+.navBar a.active
+{
+    color:orange;
+}
+
+.navBar a.activevs
+{
+    color:rgb(22, 1, 209);
+}
+/* Main Accueil */
+
+.Accueil
+{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.txtbtn
+{
+    text-align: center;
+}
+
+.MonGt
+{
+    font-size: 50px;
+    font-weight: 450;
+}
+.MonGt span
+{
+    color: orange;
+}
+
+.VProjets
+{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    background-color: orange;
+    text-align: center;
+}
+
+
+.img_h
+{
+    width: 70%;
+    align-items: flex-start;
+
+}
+
+
+
+/* À propos */
+.Apropos1
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(234, 231, 231);
+    border-bottom: black 1px solid;
+}
+
+.Apropos
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.Apropos1 h1
+{
+    text-align: center;
+    color: orange;
+    padding: 90px;
+}
+
+.Apropos1 p
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.texInfo
+{
+    padding: 50px;
+}
+
+.Apropos1 p span
+{
+    color: orange;
+    font-weight: 650;
+}
+
+.tCv
+{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 100px;
+    color: #fff;
+    background-color: orange;
+    text-align: center; 
+}
+
+.Profil
+{
+    padding-left: 100px;
+}
+.imgp
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid orange;
+}
+
+/*  ----Projets--- */
+.Projet
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.Projet h1
+{
+    text-align: center;
+    color: orange;
+    padding: 70px;
+}
+
+.Mprojets ul
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 30px;
+}
+
+.Mprojets ul li
+{
+    list-style: none;
+    background-color: rgb(234, 231, 231);
+    align-content: center;
+    padding: 30px;
+    height: 300px;
+
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Mprojets ul li h4
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.Mprojets ul li p 
+{
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.Mprojets ul li button
+{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: orange;
+    text-align: center;
+}
+
+/*---------Competences---------*/
+.Competence
+{
+    width: 100%;
+    height: 90vh;
+    background-color:rgb(234, 231, 231);
+}
+
+.Competence h1
+{
+    text-align: center;
+    color: orange;
+    padding: 90px;
+}
+
+.Competences 
+{
+    margin:0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hardskills
+{
+    align-items: center;
+    height: 500px;
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.softkills
+{
+    align-items: center;
+    height: 500px;
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.Competences div h5
+{
+    text-align: center;
+    font-size: 20px;
+    padding:20px 0 0 0;
+}
+
+.Competences div ul li
+{
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    margin: 30px;
+}
+
+.Competences div ul li h4
+{
+    font-weight: 650;
+    font-size: 20px;
+}
+.Bar_1
+{
+    margin-top: 20px;
+    width: 90%;
+    height: 10px;
+    background-color:#ebebeb;
+    border-radius: 5px;
+}
+
+.Bar_1 div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/*----------Contatcs Us--------*/
+.Contact 
+{
+    height: 90vh;
+    background-color:rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+}
+
+.Contact h1
+{
+    font-size: 45px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.Contact h1 span
+{
+    color: orange;
+}
+
+.wrap{
+    max-width:900px;
+    margin:20px auto;
+    padding:28px;
+    box-sizing:border-box;
+}
+
+  /* Form container */
+.card{
+    background: transparent;
+    padding: 12px 18px 32px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:16px;
+    align-items:flex-start;
+}
+
+  /* Labels on top-left like the image */
+label{
+    display:block;
+    font-size:14px;
+    color:#ffffff;
+    margin-bottom:8px;
+    font-weight:600;
+    text-align: left;
+}
+
+.col{
+    flex:1;
+}
+
+  /* Inputs style */
+input[type="text"], .subject, textarea{
+    width:100%;
+    box-sizing:border-box;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius:10px;
+    padding:10px 14px;
+    color:#0b2b2f;
+    font-weight:700;
+    font-size:15px;
+    /* faux "glass" bleu clair */
+    background-color:#ffffff;
+}
+
+input[type="text"]::placeholder,
+.subject::placeholder,
+textarea::placeholder{
+    color: rgba(11,43,47,0.35);
+    font-weight:600;
+}
+
+.subject{
+    height:40px;
+}
+
+textarea{
+    height:300px;
+    resize:vertical;
+    border-radius:10px;
+    padding:18px;
+    font-size:15px;
+    line-height:1.35;
+}
+
+  /* Small spacing to match image */
+.row-tight{
+    margin-bottom:10px;
+  }
+
+  /* Button centré en bas */
+.btn-wrap{
+    display:flex;
+    justify-content:center;
+    margin-top:18px;
+}
+
+.btn{
+    background:  #2fa0ad;
+    border-radius:12px;
+    padding:14px 46px;
+    color:#dff6fb;
+    font-weight:800;
+    font-size:20px;
+    border:4px solid rgba(255, 255, 255, 0.22);
+    box-shadow:
+      0 8px 0 rgba(0,0,0,0.45),
+      0 0 10px rgba(45,185,195,0.08) inset;
+    cursor:pointer;
+    transition: transform .08s ease;
+    letter-spacing:1px;
+}
+
+button{
+    cursor:pointer;
+}
+button:active
+{
+    color: orange;
+    background-color: #fff;
+    border: 5px solid orange;
+
+}
+
+
+
+/*----------Footer------*/
+footer
+{
+    height: 100px;
+    align-content: center;
+}
+.text_foot
+{
+    display: flex;
+    justify-content: space-between;
+    padding:0 30px;
+    align-content: center;
+}
+
+.text_foot h1
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text_foot span
+{
+    color: orange;
+    font-weight: 650;
+}

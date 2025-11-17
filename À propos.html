@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>À propos</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none;"><h1 class="NomPrenom">Silencieux <span>Yraldo</span></h1></a>
+        <nav class="navBar">
+            <ul>
+                <li class="acti"><a href="index.html" >Accueil</a></li>
+                <li><a href="À propos.html" style="color: orange;">À propos</a></li>
+                <li><a href="Compétences.html">Compétences</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="Apropos1" style="height: 100vh;padding-top: 90px;">
+            <h1>À propos</h1>
+            <div class="Apropos">
+                <div class="texInfo">
+                    <p>Je m'appelle <span>Silencieux</span>, passionné par la <br> création de sites modernes et interactifs</p>
+
+                    <p>Je suis actuellement étudiant en <span>développement web</span> ,<br> et je cherche a améliorer mes compétences en Javascripts, HTML et CSS.</p>
+
+                    <p>J'adore transformer mes idées en projets concret <br> et expérimenter avec les nouvelles technologies</p>
+
+                    <button class="tCv" id="OpenCv">Télécharger mon CV</button>
+
+                </div>
+                <div class="Profil">
+                    <img src="Images/Img_Profil.JPG" alt="" class="imgp">                
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="text_foot">
+            <h1 class="Design">Designed by <span>Yraldo</span> with html css js</h1>
+            <h1 class="Tous">Tous droits Réservés -2025</h1>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("OpenCv").addEventListener("click", function() {
+            window.location.href = "Projets/CV-Up-S.pdf";
+        });
+    </script>
+</body>
+</html>
